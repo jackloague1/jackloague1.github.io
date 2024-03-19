@@ -1,0 +1,122 @@
+:root {
+    --gray-1: #9E9D9D;
+    --gray-2: #B0B0B0;
+    --gray-3: hsl(212, 33%, 89%);
+    --gray-4: hsl(210, 36%, 96%);
+}
+
+*
+{
+    margin: 0;
+    background-color: var(--gray-1);
+    color: white;
+}
+
+.navbar {
+    /* width: 100%; */
+
+    /* Moves content within the navbar down 20px */
+    /* padding: 20px 0; */
+
+    /* Aligns content within the navbar to the right. */
+    text-align: right;
+
+    /* display: flex;
+    overflow: hidden; */
+}
+
+.sticky-navbar {
+    /* Makes the navbar take up the whole width of the page. */
+    width: 100%;
+    
+    /* Sets the navbar to always appear on page even when the user scrolls. */
+    position: fixed;
+
+    /* Aligns content within the navbar to the right. */
+    text-align: right;
+
+    background-color: black;
+}
+
+.navbar .links
+{
+    /* Sets the background color. */
+    background-color: transparent;
+    
+    /* float: left;
+    display: flex; */
+
+    /* Removes bullet points from list items. */
+    /* list-style-type: none; */
+}
+
+.sticky-navbar .links
+{
+    /* Sets the background color. */
+    background-color: black;
+    
+    /* float: left;
+    display: flex; */
+
+    /* Removes bullet points from list items. */
+    /* list-style-type: none; */
+}
+
+li {
+    /* Sets each list element on the same line. */
+    display: inline-block;
+    
+    /* Defines margins for each list element. */
+    margin: 20px 50px;
+}
+
+.navbar .links a 
+{
+    display: block;
+    
+    /* Sets the background color. */
+    background-color: transparent;
+    
+    /* Adds spacing between each link */
+    /* padding: 30px; */
+    
+    /* Removes default underline from links. */
+    text-decoration: none;
+
+    /* Sets the font type. */
+    font-family: Arial;
+
+    /* Sets the text color. */
+    color: white;
+}
+
+.sticky-navbar .links a 
+{
+    display: block;
+    
+    /* Sets the background color. */
+    background-color: black;
+    
+    /* Adds spacing between each link */
+    /* padding: 30px; */
+    
+    /* Removes default underline from links. */
+    text-decoration: none;
+
+    /* Sets the font type. */
+    font-family: Arial;
+
+    /* Sets the text color. */
+    color: white;
+}
+
+.links a:hover
+{
+    color: blue;
+}
+
+.name-header
+{
+    font-size: 30px;
+    padding: 25px;
+}
