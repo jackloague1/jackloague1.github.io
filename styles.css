@@ -161,6 +161,32 @@ html
     color: black;
 }
 
+@media (min-width: 320px)
+{
+    .introduction .name
+    {
+        padding: 25px 0;
+
+        /* Centers the name. */
+        text-align: center;
+
+        font-size: 10px;
+        font-family: Tahoma;
+    }
+
+    .introduction .intro-paragraph
+    {
+        width: 400px;
+        padding: 25px;
+
+        /* Centers the paragraph. */
+        margin: auto;
+        
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
 @media (min-width: 400px)
 {
     .introduction .name
