@@ -161,17 +161,24 @@ html
     color: black;
 }
 
-@media (min-width: 100px)
+@media (min-width: 10px)
 {
     .introduction .name
     {
-        padding: 25px 0;
+        display: none;
+    }
 
-        /* Centers the name. */
-        text-align: center;
+    .introduction .intro-paragraph
+    {
+        display: none;
+    }
+}
 
-        font-size: 10px;
-        font-family: Tahoma;
+@media (min-width: 360px)
+{
+    .introduction .name
+    {
+        display: none;
     }
 
     .introduction .intro-paragraph
