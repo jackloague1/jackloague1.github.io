@@ -161,40 +161,12 @@ html
     color: black;
 }
 
-@media (min-width: 10px)
-{
-    .introduction .name
-    {
-        display: none;
-    }
-
-    .introduction .intro-paragraph
-    {
-        display: none;
-    }
-}
-
 @media (min-width: 360px)
 {
-    .introduction .name
-    {
-        display: none;
-    }
 
-    .introduction .intro-paragraph
-    {
-        width: 400px;
-        padding: 25px;
-
-        /* Centers the paragraph. */
-        margin: auto;
-        
-        font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-    }
 }
 
-@media (min-width: 400px)
+@media (min-width: 320px)
 {
     .introduction .name
     {
@@ -209,7 +181,7 @@ html
 
     .introduction .intro-paragraph
     {
-        width: 400px;
+        width: 300px;
         padding: 25px;
 
         /* Centers the paragraph. */
