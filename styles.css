@@ -12,7 +12,15 @@
     color: white;
 }
 
-.navbar {
+html 
+{
+    /* Makes the web page scroll smoothly when the user uses the navigation bar. */
+    scroll-behavior: smooth;
+}
+
+/* Represents the navigation bar when the user is at the top of the page. */
+.navbar 
+{
     /* width: 100%; */
 
     /* Moves content within the navbar down 20px */
@@ -21,11 +29,16 @@
     /* Aligns content within the navbar to the right. */
     text-align: right;
 
+    background-color: transparent;
+
     /* display: flex;
     overflow: hidden; */
 }
 
-.sticky-navbar {
+/* Represents the navigation bar when the user scrolls down the page
+   and the navigation bar sticks to the top. */
+.sticky-navbar 
+{
     /* Makes the navbar take up the whole width of the page. */
     width: 100%;
     
@@ -36,6 +49,25 @@
     text-align: right;
 
     background-color: black;
+}
+
+/* Represents the button that pulls down the navigation bar. This button
+   will only appear if the user is viewing the web page on a small enough 
+   window or screen. */
+/* .navbar .nav-toggle
+{
+    padding: 20px;
+    font-size: 30px;
+    border-color: transparent;
+    cursor: pointer;
+} */
+
+@media (min-width: 640px)
+{
+    /* .navbar .nav-toggle
+    {
+        display: none;
+    } */
 }
 
 .navbar .links
@@ -62,7 +94,7 @@
     /* list-style-type: none; */
 }
 
-li {
+.links li {
     /* Sets each list element on the same line. */
     display: inline-block;
     
@@ -82,6 +114,8 @@ li {
     
     /* Removes default underline from links. */
     text-decoration: none;
+
+    font-size: 18px;
 
     /* Sets the font type. */
     font-family: Arial;
@@ -103,6 +137,8 @@ li {
     /* Removes default underline from links. */
     text-decoration: none;
 
+    font-size: 18px;
+
     /* Sets the font type. */
     font-family: Arial;
 
@@ -115,8 +151,101 @@ li {
     color: blue;
 }
 
-.name-header
+.introduction
+{
+    height: 400px;
+}
+
+.introduction .name h2
+{
+    color: black;
+}
+
+@media (min-width: 400px)
+{
+    .introduction .name
+    {
+        padding: 25px 0;
+
+        /* Centers the name. */
+        text-align: center;
+
+        font-size: 30px;
+        font-family: Tahoma;
+    }
+
+    .introduction .intro-paragraph
+    {
+        width: 400px;
+        padding: 25px;
+
+        /* Centers the paragraph. */
+        margin: auto;
+        
+        font-size: 12px;
+        font-family: Arial;
+    }
+}
+
+@media (min-width: 950px)
+{
+    .introduction .name
+    {
+        padding: 25px 50px;
+
+        /* Centers the name. */
+        text-align: unset;
+
+        font-size: 30px;
+        font-family: Tahoma;
+    }
+
+    .introduction .intro-paragraph
+    {
+        width: 400px;
+        padding: 25px 25%;
+        margin: 0;
+        font-size: 12px;
+        font-family: Arial;
+    }
+}
+
+.about-section
+{
+    padding: 20px 20px;
+    background: var(--gray-2);
+    height: 400px;
+    text-align: center;
+}
+
+.about-section h2
 {
     font-size: 30px;
-    padding: 25px;
+    background: var(--gray-2);
+}
+
+.projects-section
+{
+    padding: 20px 20px;
+    height: 400px;
+    text-align: center;
+}
+
+.projects-section h2
+{
+    font-size: 30px;
+}
+
+.contact-section
+{
+    padding: 20px 20px;
+    background: var(--gray-2);
+    height: 400px;
+    text-align: center;
+}
+
+.contact-section h2
+{
+    font-size: 30px;
+    background: var(--gray-2);
 }
