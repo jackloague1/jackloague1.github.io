@@ -161,7 +161,7 @@ html
     color: black;
 }
 
-@media (min-width: 320px)
+@media (min-width: 100px)
 {
     .introduction .name
     {
